@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Kishore Gowda</h1>
-<h3 align="center">A passionate developer from India</h3>
+<h3 align="center">A passionate developer from 🇮🇳</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=kishoregowda17&label=Profile%20views&color=0e75b6&style=flat" alt="kishoregowda17" /> </p>
 
@@ -15,7 +15,7 @@
 
 - 📫 How to reach me **kishoregowda170@gmail.com**
 
-- ⚡ Fun fact **I am Jobless 😱**
+- ⚡ Fun fact **I am Jobless 😭**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
