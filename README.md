@@ -1,12 +1,7 @@
 <h1 align="center">Hi 👋, I'm Kishore Gowda</h1>
 <h3 align="center">A passionate developer from 🇮🇳</h3>
 
-<p align="left">
-  <img
-    src="https://komarev.com/ghpvc/?username=kishoregowda17&label=Profile%20views&color=0e75b6&style=flat"
-    alt="kishoregowda17"
-  />
-</p>
+
 
 <p align="left">
   <a href="https://github.com/ryo-ma/github-profile-trophy"
