@@ -11,7 +11,7 @@ I'm learning Java and building my programming fundamentals.
 - Git & GitHub
 
 ## 📈 Contribution Graph
-(./github-user-contribution.svg)
+![GitHub Contribution Graph](./github-user-contribution.svg)
 
 ## 🔥 GitHub Streak
 
