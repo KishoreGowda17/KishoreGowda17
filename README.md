@@ -1,6 +1,28 @@
-## My GitHub Stats
+# Hi 👋, I'm Kishore Gowda
+
+I'm learning Java and building my programming fundamentals.
+
+## 🚀 Currently Learning
+
+- Java
+- OOP
+- Data Structures
+- Algorithms
+- Git & GitHub
+
+## 📊 GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=KishoreGowda17&show_icons=true&theme=radical" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KishoreGowda17&layout=compact&theme=radical" />
 </p>
+
+## 🔥 GitHub Streak
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=KishoreGowda17&theme=radical" />
+</p>
+
+## 📈 Contribution Graph
+
+[![Kishore's GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=KishoreGowda17&theme=react-dark)](https://github.com/KishoreGowda17)
