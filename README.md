@@ -19,9 +19,7 @@ I'm learning Java and building my programming fundamentals.
 
 ## 🔥 GitHub Streak
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=KishoreGowda17&theme=radical" />
-</p>
+<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=KishoreGowda17&theme=vitesse&hide_border=true" alt="GitHub Streak" /></a>
 
 ## 📈 Contribution Graph
 
