@@ -13,13 +13,13 @@ I'm learning Java and building my programming fundamentals.
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/KishoreGowda17/KishoreGowda17/github-breakout/images/breakout-custom.svg"
+    srcset="https://raw.githubusercontent.com/KishoreGowda17/KishoreGowda17/github-breakout/images/breakout-dark.svg"
   />
 
-  <img
-    alt="GitHub Breakout"
-    src="https://raw.githubusercontent.com/KishoreGowda17/KishoreGowda17/github-breakout/images/breakout-dark.svg"
-  />
+ <img
+  src="https://raw.githubusercontent.com/KishoreGowda17/KishoreGowda17/github-breakout/images/breakout-custom.svg"
+  alt="GitHub Breakout"
+/>
 </picture>
 
 ## 🔥 GitHub Streak
