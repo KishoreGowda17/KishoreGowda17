@@ -21,9 +21,9 @@ jobs:
         uses: cyprieng/github-breakout@v1
         with:
           github_username: KishoreGowda17
-          paddle_color: "#1AF916"
-          ball_color: "#FA0202"
-          bricks_colors: "#2A3C4D,#1D2A36,#0F161C,#010F1C,#000408"
+          paddle_color: "#190126"
+          ball_color: "#ffffff"
+          bricks_colors: "#052E16,#166534,#15803D,#22C55E,#86EFAC"
 
       - name: Move custom SVG
         run: |
