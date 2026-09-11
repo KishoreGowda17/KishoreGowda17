@@ -10,8 +10,22 @@ I'm learning Java and building my programming fundamentals.
 - Algorithms
 - Git & GitHub
 
-## 📈 Contribution Graph
-![GitHub Contribution Graph](./github-user-contribution.svg)
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/KishoreGowda17/KishoreGowda17/github-breakout/images/breakout-dark.svg"
+  />
+
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/KishoreGowda17/KishoreGowda17/github-breakout/images/breakout-light.svg"
+  />
+
+  <img
+    alt="GitHub Breakout"
+    src="https://raw.githubusercontent.com/KishoreGowda17/KishoreGowda17/github-breakout/images/breakout-light.svg"
+  />
+</picture>
 
 ## 🔥 GitHub Streak
 
