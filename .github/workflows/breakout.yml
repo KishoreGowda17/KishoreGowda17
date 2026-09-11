@@ -1,0 +1,38 @@
+name: Generate GitHub Breakout
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate Breakout
+        uses: cyprieng/github-breakout@v1
+        with:
+          github_username: KishoreGowda17
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Update breakout branch
+        run: |
+          git checkout --orphan github-breakout
+          git rm -rf .
+          mkdir images
+          cp output/light.svg images/breakout-light.svg
+          cp output/dark.svg images/breakout-dark.svg
+          git add images
+          git commit -m "chore: update GitHub breakout"
+          git push --force origin github-breakout
