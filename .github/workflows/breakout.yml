@@ -2,7 +2,7 @@ name: Generate GitHub Breakout
 
 on:
   schedule:
-      - cron: "0 0 * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -11,7 +11,7 @@ jobs:
       contents: write
 
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 1
 
     steps:
       - name: Checkout
@@ -21,9 +21,9 @@ jobs:
         uses: cyprieng/github-breakout@v1
         with:
           github_username: KishoreGowda17
-          paddle_color: "#190126"
+          paddle_color: "#b9c1bd"
           ball_color: "#ffffff"
-          bricks_colors: "#052E16,#166534,#15803D,#22C55E,#86EFAC"
+          bricks_colors: "#002811, #166534, #1ca84f,#22C55E,#95ffbc"
 
       - name: Move custom SVG
         run: |
