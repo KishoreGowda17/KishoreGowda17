@@ -2,7 +2,7 @@ name: Generate GitHub Breakout
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+      - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -11,6 +11,7 @@ jobs:
       contents: write
 
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
       - name: Checkout
@@ -24,6 +25,11 @@ jobs:
           ball_color: "#FA0202"
           bricks_colors: "#2A3C4D,#1D2A36,#0F161C,#010F1C,#000408"
 
+      - name: Move custom SVG
+        run: |
+          mkdir -p /tmp/breakout-images
+          mv output/custom.svg /tmp/breakout-images/breakout-custom.svg
+
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
@@ -34,7 +40,7 @@ jobs:
           git checkout --orphan github-breakout
           git rm -rf .
           mkdir images
-          cp output/custom.svg images/breakout-custom.svg
+          mv /tmp/breakout-images/breakout-custom.svg images/
           git add images
-          git commit -m "chore: update GitHub breakout"
+          git commit -m "chore: update GitHub breakout SVGs" || echo "No changes to commit"
           git push --force origin github-breakout
