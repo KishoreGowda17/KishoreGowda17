@@ -10,7 +10,7 @@ I'm learning Java and building my programming fundamentals.
 - Algorithms
 - Git & GitHub
 
-## 🎮 GitHub Breakout
+## 🎮 GitHub Graph
 
 <img
   src="https://raw.githubusercontent.com/KishoreGowda17/KishoreGowda17/github-breakout/images/breakout-custom.svg"
