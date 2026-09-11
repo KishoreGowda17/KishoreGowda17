@@ -20,6 +20,9 @@ jobs:
         uses: cyprieng/github-breakout@v1
         with:
           github_username: KishoreGowda17
+          paddle_color: "#F97316"
+          ball_color: "#FFFFFF"
+          bricks_colors: "#3B0A0A,#7F1D1D,#C2410C,#EA580C,#FB923C"
 
       - name: Configure Git
         run: |
@@ -31,8 +34,7 @@ jobs:
           git checkout --orphan github-breakout
           git rm -rf .
           mkdir images
-          cp output/light.svg images/breakout-light.svg
-          cp output/dark.svg images/breakout-dark.svg
+          cp output/custom.svg images/breakout-custom.svg
           git add images
           git commit -m "chore: update GitHub breakout"
           git push --force origin github-breakout
