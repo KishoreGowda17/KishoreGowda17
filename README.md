@@ -16,14 +16,9 @@ I'm learning Java and building my programming fundamentals.
     srcset="https://raw.githubusercontent.com/KishoreGowda17/KishoreGowda17/github-breakout/images/breakout-dark.svg"
   />
 
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/KishoreGowda17/KishoreGowda17/github-breakout/images/breakout-light.svg"
-  />
-
   <img
     alt="GitHub Breakout"
-    src="https://raw.githubusercontent.com/KishoreGowda17/KishoreGowda17/github-breakout/images/breakout-light.svg"
+    src="https://raw.githubusercontent.com/KishoreGowda17/KishoreGowda17/github-breakout/images/breakout-dark.svg"
   />
 </picture>
 
