@@ -22,8 +22,8 @@ jobs:
         with:
           github_username: KishoreGowda17
           paddle_color: "#b9c1bd"
-          ball_color: "#ffffff"
-          bricks_colors: "#002811, #166534, #1ca84f,#22C55E,#95ffbc"
+          ball_color: "#ff0000"
+          bricks_colors: "#151B23, #166534, #1ca84f,#22C55E,#95ffbc"
 
       - name: Move custom SVG
         run: |
