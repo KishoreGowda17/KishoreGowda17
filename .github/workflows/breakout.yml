@@ -1,46 +1,33 @@
-name: Generate GitHub Breakout
+name: Generate Matrix Rain SVG
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
-  generate:
-    permissions:
-      contents: write
-
+  generate-matrix-rain:
     runs-on: ubuntu-latest
-    timeout-minutes: 1
 
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Generate Breakout
-        uses: cyprieng/github-breakout@v1
+      - name: Generate Matrix SVGs
+        uses: N1k0droid/matrix-svg-contrib@v1.0.0
         with:
-          github_username: KishoreGowda17
-          paddle_color: "#b9c1bd"
-          ball_color: "#ff0000"
-          bricks_colors: "#151B23, #166534, #1ca84f,#22C55E,#95ffbc"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Move custom SVG
-        run: |
-          mkdir -p /tmp/breakout-images
-          mv output/custom.svg /tmp/breakout-images/breakout-custom.svg
-
-      - name: Configure Git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Update breakout branch
-        run: |
-          git checkout --orphan github-breakout
-          git rm -rf .
-          mkdir images
-          mv /tmp/breakout-images/breakout-custom.svg images/
-          git add images
-          git commit -m "chore: update GitHub breakout SVGs" || echo "No changes to commit"
-          git push --force origin github-breakout
+      - name: Deploy SVGs
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
