@@ -12,8 +12,15 @@ I'm learning Java and building my programming fundamentals.
 
 ## 🎮 GitHub Graph
 
-<img
-  src="https://raw.githubusercontent.com/KishoreGowda17/KishoreGowda17/github-breakout/images/breakout-custom.svg"
-  alt="GitHub Breakout"
-/>
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/matrix-rain-v2-dark.svg">
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/matrix-rain-v2-light.svg">
+  <img
+    alt="Matrix Rain Contribution Graph"
+    src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/matrix-rain-v2-dark.svg">
+</picture>
 
