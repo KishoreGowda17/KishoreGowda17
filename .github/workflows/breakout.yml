@@ -1,26 +1,32 @@
-# .github/workflows/contribution-gallery.yml
-name: Generate Contribution Gallery
+name: Generate Matrix Rain SVG
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
 
 jobs:
-  generate:
+  generate-matrix-rain:
     runs-on: ubuntu-latest
-    steps:
-      - uses: crosscore/contribution-gallery@v1
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/ambient.svg?mode=ambient
-            dist/ambient-dark.svg?palette=dark&mode=ambient
+    timeout-minutes: 10
 
-      - uses: crazy-max/ghaction-github-pages@v4
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate Matrix SVGs
+        uses: N1k0droid/matrix-svg-contrib@v1.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
