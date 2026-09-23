@@ -2,7 +2,7 @@ name: Generate Matrix Rain SVG
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
   push:
     branches:
